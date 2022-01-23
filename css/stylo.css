@@ -1,9 +1,9 @@
 :root {
-  --primary--: hsl(217, 54%, 11%);
-  --secundary-card-: hsl(216, 50%, 16%);
-  --white--: hsl(0, 0%, 100%);
-  --text-cian--: hsl(178, 100%, 50%);
-  --text--softblue--: hsl(215, 51%, 70%);
+  --primary: hsl(217, 54%, 11%);
+  --secundary-card: hsl(216, 50%, 16%);
+  --white: hsl(0, 0%, 100%);
+  --text-cian: hsl(178, 100%, 50%);
+  --text--softblue: hsl(215, 51%, 70%);
 }
 
 * {
@@ -24,7 +24,7 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-color: var(--primary--);
+  background-color: var(--primary);
 }
 
 .card {
@@ -33,7 +33,11 @@ body {
   min-width: 350px;
   padding: 20px;
   border-radius: 2.5%;
-  background-color: var(--secundary-card-);
+  background-color: var(--secundary-card);
+}
+
+.card__header{
+  transition: all 2s ease;
 }
 
 .header__figure {
@@ -47,17 +51,16 @@ body {
   position: absolute;
   top: 10%;
   left: 10%;
-  transition: 0.3s ease;
 }
 
 .card__title {
-  color: var(--white--);
+  color: var(--white);
   cursor: pointer;
 }
 
 .card__text {
   line-height: 0.5;
-  color: var(--text--softblue--);
+  color: var(--text--softblue);
   font-size: 18px;
 }
 
@@ -68,7 +71,7 @@ body {
   justify-content: space-between;
 }
 .card__texticon {
-  color: var(--text-cian--);
+  color: var(--text-cian);
   margin-left: 10px;
   cursor: pointer;
 }
@@ -106,7 +109,7 @@ body {
 }
 
 .card__span {
-  color: var(--white--);
+  color: var(--white);
   margin-left: 5px;
   text-decoration: none;
 }
@@ -129,7 +132,7 @@ body {
 
 .header__figure:hover .icon__eye {
   display: block;
-  transition: 0.4s ease-in-out;
+  transition: all 5s ease;
 }
 
 .window__cont {
@@ -137,7 +140,6 @@ body {
   position: fixed;
   width: 100%;
   height: 100vh;
-  transition: 0.4s ease-out;
 }
 
 .window__bg {
@@ -164,10 +166,5 @@ body {
 
 /* <--------------------------------> */
 /* media query  */
-
-@media screen and (max-width: 375px) {
-  .card {
-    width: 95%;
-  }
-}
 /* <--------------------------------> */
+
